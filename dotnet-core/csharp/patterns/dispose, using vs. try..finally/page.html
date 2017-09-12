@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>dispose, using vs. try..finally</title>
+</head><body>Provides a convenient syntax that ensures the correct use of <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable">IDisposable</a>&nbsp;objects, for resource cleanup. <span style="color: #0000ff"><tt>Font</tt></span>&nbsp;must implement the <tt><span style="color: #0000ff">IDisposable</span></tt>&nbsp;interface.<br/>
+<span style="font-family: Ubuntu Mono"><br/>
+<img src="image.png" /><br/>
+<br/>
+<br/>
+<br/>
+</span>The <tt><span style="font-family: Ubuntu Mono"><span style="background-color: #e5e5e5">using</span></span></tt>&nbsp;statement ensures that <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable.dispose">Dispose</a>&nbsp;is called even if an exception occurs while you are calling methods on the object. You can achieve the same result by putting the object inside a try block and then calling <a href="https://docs.microsoft.com/en-us/dotnet/api/system.idisposable.dispose">Dispose</a>&nbsp;in a finally block; in fact, this is how the <tt><span style="font-family: Ubuntu Mono"><span style="background-color: #e5e5e5">using</span></span></tt>&nbsp;statement is translated by the compiler.<br/>
+<br/>
+<img src="image 2.png" /><br/>
+<br/>
+<br/>
+<br/>
+Multiple instances of a type can be declared in a using statement, as shown in the following example.<br/>
+<br/>
+<img src="image 3.png" /><br/>
+<br/>
+<br/>
+<br/>
+You can instantiate the resource object and then pass the variable to the <span style="background-color: #e5e5e5"><tt>using</tt></span>&nbsp;statement, but this is not a best practice.<br/>
+<br/>
+<img src="image 4.png" /><br/>
+In this case, the object remains in scope after control leaves the using block even though it will probably no longer have access to its unmanaged resources. In other words, it will no longer be fully initialized. If you try to use the object outside the using block, you risk causing an exception to be thrown. For this reason, it is generally better to instantiate the object in the <span style="background-color: #e5e5e5"><tt>using</tt></span>&nbsp;statement and limit its scope to the using block.<br/>
+</body></html>

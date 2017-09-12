@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>generics, type parameters, where, &lt;&gt;</title>
+</head><body>Generics make it possible to design classes and methods that defer the specification of one or more types until the class or method is declared and instantiated by client code.<br/>
+<br/>
+The most common use of generics is to create collection classes.<br/>
+<br/>
+In a generic type or method definition, a type parameters is a placeholder for a specific type that a client specifies when they instantiate a variable of the generic type. A generic class, such as <tt>GenericList&lt;T&gt;</tt>, cannot be used as-is because it is not really a type; it is more like a blueprint for a type. To use <tt>GenericList&lt;T&gt;</tt>, client code must declare and instantiate a constructed type by specifying a type argument inside the angle brackets. The type argument for this particular class can be any type recognized by the compiler.<br/>
+<br/>
+For example, by using a generic type parameter T you can write a single class that other client code can use without incurring the cost or risk of runtime casts or boxing operations. In each of these instances of <tt>GenericList&lt;T&gt;</tt>, every occurrence of <tt>T</tt>&nbsp;in the class will be substituted at run time with the type argument.<br/>
+<br/>
+<img src="image.png" /><br/>
+<br/>
+<br/>
+<br/>
+Note that T is available to the nested Node class. When GenericList&lt;T&gt; is instantiated with a concrete type, for example as a GenericList&lt;int&gt;, each occurrence of T will be replaced with int.<br/>
+<br/>
+<img src="image 2.png" /><br/>
+<br/>
+<br/>
+When you define a generic class, you can apply restrictions to the kinds of types that client code can use for type arguments when it instantiates your class. If client code tries to instantiate your class by using a type that is not allowed by a constraint, the result is a compile-time error. These restrictions are called constraints. Constraints are specified by using the <tt>where</tt>&nbsp;contextual keyword. The following table lists the six types of constraints:<br/>
+<br/>
+<img src="image 3.png" /><br/>
+<br/>
+<br/>
+</body></html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>delegates, method parameters, callback</title>
+</head><body>A delegate is a type that safely encapsulates a method, similar to a function pointer in C and C++. Unlike C function pointers, delegates are object-oriented, type safe, and secure. The type of a delegate is defined by the name of the delegate.<br/>
+<br/>
+The following example declares a delegate named <tt>Del</tt>&nbsp;that can encapsulate a method that takes a string as an argument and returns void:<br/>
+<br/>
+<img src="image.png" /><br/>
+<br/>
+<img src="image 4.png" /><br/>
+<img src="image 5.png" /><br/>
+<br/>
+<br/>
+<br/>
+A delegate object is normally constructed by providing the name of the method the delegate will wrap, or with an anonymous Method. Once a delegate is instantiated, a method call made to the delegate will be passed by the delegate to that method. The parameters passed to the delegate by the caller are passed to the method, and the return value, if any, from the method is returned to the caller by the delegate. This is known as invoking the delegate. An instantiated delegate can be invoked as if it were the wrapped method itself. For example:<br/>
+<br/>
+<br/>
+<img src="image 2.png" /><br/>
+<img src="image 3.png" /><br/>
+<br/>
+<br/>
+<br/>
+When a delegate is constructed to wrap an instance method, the delegate references both the instance and the method. A delegate has no knowledge of the instance type aside from the method it wraps, so a delegate can refer to any type of object as long as there is a method on that object that matches the delegate signature. When a delegate is constructed to wrap a static method, it only references the method. <br/>
+<br/>
+<img src="image 6.png" /><br/>
+<img src="image 7.png" /><br/>
+<br/>
+<img src="image 8.png" /><br/>
+<br/>
+<br/>
+</body></html>
