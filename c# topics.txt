@@ -1,0 +1,231 @@
+12 Inheritance in C#
+13 Interfaces in C#
+14 Creating Enums
+15 Structs in C#
+16 Working with Generics in C#
+17 Type Checking in C#
+18 Garbage Collection in C#
+19 Working with Files in C#
+20 Building Tuples in C#
+21 Pattern Matching in C#
+22 Ref Locals and Returns
+23 Inline out Variables
+24 Local Functions
+25 Expression Bodied Members
+26 Throw Expressions
+27 Generalized Async Return Types
+28 Digit Separators
+29 What’s New in ASP.NET Core 2.0
+30 Application Startup
+31 Middleware
+32 Routing and Views
+33 Dependency Injection
+34 Model Validation
+35 Identity
+36 Razor Pages
+37 What is an O/RM
+38 The Database Context
+39 Migrations
+40 Creating a CRUD Service
+41 Delegates and Lambda Expressions
+42 Threads and Parallelism
+43 LINQ
+44 Extension Methods
+
+5 Generics
+6 Delegates
+7 Lambda Expressions
+8 Events
+9 Extension Methods
+10 LINQ
+11 Nullable Types
+12 Dynamic
+13 Exception Handling
+14 Asynchronous Programming with Async / Await
+
+Association between Classes
+16 Class Coupling
+17 Inheritance
+18 Composition
+19 Favour Composition over Inheritance
+
+23 Upcasting and Downcasting
+24 Boxing and Unboxing
+
+27 Method Overriding
+28 Abstract Classes and Members
+29 Sealed Classes and Members
+
+35 Interfaces are NOT for Multiple Inheritance
+36 Interfaces and Polymorphism
+
+
+
+
+
+
+The SOLID Design Principles
+2 Overview
+3 Single Responsibility Principle
+4 Open-Closed Principle
+5 Liskov Substitution Principle
+6 Interface Segregation Principle
+7 Dependency Inversion Principle
+8 Summary
+
+Builder
+9 Overview
+10 Life Without Builder
+11 Builder
+12 Fluent Builder
+13 Faceted Builder
+14 Summary
+
+Factories
+15 Overview
+16 Point Example
+17 Factory Method
+18 Factory
+19 Inner Factory
+20 Abstract Factory
+21 Abstract Factory and OCP
+22 Summary
+
+Prototype
+23 Overview
+24 ICloneable is Bad
+25 Copy Constructors
+26 Explicit Deep Copy Interface
+27 Copy Through Serialization
+28 Summary
+
+Singleton
+29 Overview
+30 Singleton Implementation
+31 Testability Issues
+32 Singleton in Dependency Injection
+33 Monostate
+34 Summary
+
+Adapter
+35 Overview
+36 VectorRaster Demo
+37 Adapter Caching
+38 Summary
+
+Bridge
+39 Overview
+40 Bridge
+41 Summary
+
+Composite
+42 Overview
+43 Geometric Shapes
+44 Neural Networks
+45 Summary
+
+Decorator
+46 Overview
+47 Custom String Builder
+48 Adapter-Decorator
+49 Multiple Inheritance
+50 Dynamic Decorator Composition
+51 Static Decorator Composition
+52 Summary
+
+Façade
+53 Overview
+54 Façade
+55 Summary
+
+Flyweight
+56 Overview
+57 Repeating User Names
+58 Text Formatting
+59 Summary
+
+Proxy
+60 Overview
+61 Protection Proxy
+62 Property Proxy
+63 Dynamic Proxy for Logging
+64 Proxy vs. Decorator
+65 Summary
+
+Chain of Responsibility
+66 Overview
+67 Command Query Separation
+68 Method Chain
+69 Broker Chain
+70 Summary
+
+Command
+71 Overview
+72 Command
+73 Undo Operations
+74 Summary
+
+Interpreter
+75 Overview
+76 Handmade Interpreter Lexing
+77 Handmade Interpreter Parsing
+78 ANTLR
+79 Summary
+
+Iterator
+80 Overview
+81 Iterator Object
+82 Iterator Method
+83 Iterators and Duck Typing
+84 Array-Backed Properties
+85 Summary
+
+Mediator
+86 Overview
+87 Chat Room
+88 Event Broker
+89 Summary
+
+Memento
+90 Overview
+91 Memento
+92 Undo and Redo
+93 Memento for Interop
+94 Summary
+
+Null Object
+95 Overview
+96 Null Object
+97 Dynamic Null Object
+98 Summary
+
+Observer
+99 Overview
+100 Observer via the event Keyword
+101 Weak Event Pattern
+102 Observable Properties and Sequences
+103 Summary
+
+State
+104 Overview
+105 Handmade State Machine
+106 State Machine with Stateless
+107 Summary
+
+Strategy
+108 Overview
+109 Dynamic Strategy
+110 Static Strategy
+111 Summary
+
+Template Method
+112 Overview
+113 Template Method
+114 Summary
+
+Visitor
+115 Overview
+116 Intrusive Expression Printing
+117 Reflection-Based Printing
+118 Classic Visitor Double Dispatch
+119 Dynamic Visitor via the DLR
