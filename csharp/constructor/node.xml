@@ -2,16 +2,16 @@
 <node>
 <version>6</version>
 <dict>
-  <key>expanded</key><false/>
-  <key>nodeid</key><string>239cd4a0-2a8e-43fe-89fb-702500bf07c5</string>
-  <key>modified_time</key><integer>1498125292</integer>
+  <key>expanded</key><true/>
+  <key>nodeid</key><string>a390afac-3e78-4c43-aa55-2c713da19d11</string>
+  <key>modified_time</key><integer>1498125387</integer>
   <key>expanded2</key><true/>
   <key>content_type</key><string>application/x-notebook-dir</string>
-  <key>created_time</key><integer>1498125292</integer>
+  <key>created_time</key><integer>1498125387</integer>
   <key>info_sort_dir</key><integer>1</integer>
-  <key>title</key><string>inheritance</string>
+  <key>title</key><string>constructor</string>
   <key>version</key><integer>6</integer>
-  <key>order</key><integer>1</integer>
+  <key>order</key><integer>0</integer>
   <key>info_sort</key><string>order</string>
 </dict>
 </node>

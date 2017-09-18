@@ -13,13 +13,13 @@
       </array>
     </dict>
   </array>
-  <key>expanded</key><false/>
+  <key>expanded</key><true/>
   <key>nodeid</key><string>d0ce9a2b-65ab-45e3-b48c-fa70bfde5a8c</string>
   <key>modified_time</key><integer>1498124435</integer>
   <key>content_type</key><string>application/x-notebook-dir</string>
   <key>created_time</key><integer>1498124435</integer>
   <key>info_sort_dir</key><integer>1</integer>
-  <key>title</key><string>dotnet core</string>
+  <key>title</key><string>notes</string>
   <key>column_widths</key><dict>
     <key>created_time</key><integer>150</integer>
     <key>modified_time</key><integer>150</integer>
