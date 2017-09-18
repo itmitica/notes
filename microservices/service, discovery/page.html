@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>service, discovery</title>
+</head><body><a href="https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/">Why Use Service Discovery?</a><br/>
+<br/>
+Let’s imagine that you are writing some code that invokes a service that has a REST API or Thrift API. In order to make a request, your code needs to know the network location (IP address and port) of a service instance.<br/>
+<br/>
+Service instances have dynamically assigned network locations. Moreover, the set of service instances changes dynamically because of autoscaling, failures, and upgrades. Consequently, your client code needs to use a more elaborate service discovery mechanism.<br/>
+<br/>
+There are two main service discovery patterns: client‑side discovery and server‑side discovery.<br/>
+<br/>
+<br/>
+<span style="font-size: 16pt">The Client‑Side Discovery Pattern</span><br/>
+<br/>
+When using <a href="http://microservices.io/patterns/client-side-discovery.html">client‑side discovery</a>, the client is responsible for determining the network locations of available service instances and load balancing requests across them. The client queries a service registry, which is a database of available service instances. The client then uses a load‑balancing algorithm to select one of the available service instances and makes a request.<br/>
+<br/>
+<br/>
+<span style="font-size: 16pt">The Server‑Side Discovery Pattern</span><br/>
+<br/>
+The client makes a request to a service via a load balancer. The load balancer queries the service registry and routes each request to an available service instance. As with client‑side discovery, service instances are registered and deregistered with the service registry.<br/>
+<br/>
+<br/>
+<span style="font-size: 16pt">The Service Registry</span><br/>
+<br/>
+The service registry is a key part of service discovery. It is a database containing the network locations of service instances. A service registry needs to be highly available and up to date. Clients can cache network locations obtained from the service registry. However, that information eventually becomes out of date and clients become unable to discover service instances. Consequently, a service registry consists of a cluster of servers that use a replication protocol to maintain consistency.<br/>
+<br/>
+<br/>
+<span style="font-size: 16pt">Service Registration Options</span><br/>
+<br/>
+There are a couple of different ways to handle the registration and deregistration. One option is for service instances to register themselves, the <a href="http://microservices.io/patterns/self-registration.html">self‑registration pattern</a>. The other option is for some other system component to manage the registration of service instances, the <a href="http://microservices.io/patterns/3rd-party-registration.html">third‑party registration pattern</a>.<br/>
+<br/>
+<br/>
+<span style="font-size: 14pt">The Self‑Registration Pattern</span><br/>
+<br/>
+When using the <a href="http://microservices.io/patterns/self-registration.html">self‑registration pattern</a>, a service instance is responsible for registering and deregistering itself with the service registry. Also, if required, a service instance sends heartbeat requests to prevent its registration from expiring.<br/>
+<br/>
+<br/>
+<span style="font-size: 14pt">The Third‑Party Registration Pattern</span><br/>
+<br/>
+When using the <a href="http://microservices.io/patterns/3rd-party-registration.html">third-party registration pattern</a>, service instances aren’t responsible for registering themselves with the service registry. Instead, another system component known as the <i>service registrar </i>handles the registration. The service registrar tracks changes to the set of running instances by either polling the deployment environment or subscribing to events. When it notices a newly available service instance it registers the instance with the service registry. The service registrar also deregisters terminated service instances.<br/>
+<br/>
+</body></html>
