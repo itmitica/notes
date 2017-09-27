@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>cli, sheet, cheat</title>
+</head><body><img src="image.png" /><br/>
+<br/>
+<span style="font-size: 0pt">Checks<br/>
+Check installed CLI version:<br/>
+dotnet --version<br/>
+Show available templates:<br/>
+<br/>
+dotnet new<br/>
+Solutions<br/>
+Create a solution with the name of current the folder:<br/>
+dotnet new sln<br/>
+Create a solution with a specific name:<br/>
+<br/>
+dotnet new sln --name [solution name]<br/>
+Add a project to a solution:<br/>
+<br/>
+dotnet add sln [relative path to csproj file]<br/>
+Packages<br/>
+Add package reference to the project in the current folder:<br/>
+dotnet add package [package name]<br/>
+Remove a package reference from the project in the current folder:<br/>
+<br/>
+dotnet remove package [package name]<br/>
+Add a specific package version reference to the project in the current folder:<br/>
+<br/>
+dotnet add package [package name]-v [version]<br/>
+Restore packages:<br/>
+<br/>
+dotnet restore<br/>
+Create a nuget package for the project in current folder:<br/>
+<br/>
+dotnet pack<br/>
+Project Templates<br/>
+Install a new project template:<br/>
+dotnet new --install [dotnet template name]<br/>
+Remove a project template:<br/>
+<br/>
+dotnet new --uninstall [dotnet template name]<br/>
+Tests<br/>
+Run test defined in current folder project<br/>
+dotnet test<br/>
+Builds<br/>
+Build current’s folder solution or project<br/>
+dotnet build<br/>
+Build current’s folder solution or project with release configuration<br/>
+<br/>
+dotnet build -c Release<br/>
+Publish artifacts for current’s folder solution or project.<br/>
+<br/>
+dotnet publish<br/>
+MSBUILD<br/>
+To add a reference to a local assembly without nuget package, edit your csproj and add a Reference as shown in the following sample:<br/>
+&lt;code&gt;<br/>
+&lt;ItemGroup&gt;<br/>
+&nbsp;&lt;Reference Include="[Relative path to the Assembly dll file]" /&gt;<br/>
+&lt;/ItemGroup&gt;<br/>
+&lt;/code&gt;<br/>
+Force a file to be copied to the output folder, edit your csproj and add a Content section as shown in the following sample:<br/>
+<br/>
+&lt;code&gt;<br/>
+&nbsp;&lt;ItemGroup&gt;<br/>
+&nbsp; &lt;Content Include="[name of the file]"&gt;<br/>
+&nbsp; &nbsp;&lt;CopyToOutputDirectory&gt;PreserveNewest&lt;/CopyToOutputDirectory&gt;<br/>
+&nbsp; &lt;/Content&gt;<br/>
+&nbsp;&lt;/ItemGroup&gt;<br/>
+&lt;/code&gt;</span></body></html>

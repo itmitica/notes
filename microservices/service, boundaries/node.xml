@@ -3,14 +3,14 @@
 <version>6</version>
 <dict>
   <key>expanded</key><true/>
-  <key>title</key><string>service, discovery</string>
-  <key>nodeid</key><string>8e6dedde-0d94-437c-ac1e-cf4a574745ba</string>
-  <key>modified_time</key><integer>1506511457</integer>
+  <key>title</key><string>service, boundaries</string>
+  <key>nodeid</key><string>1878b1bb-2a88-4d60-a85d-e45644395574</string>
+  <key>modified_time</key><integer>1506512944</integer>
   <key>version</key><integer>6</integer>
   <key>content_type</key><string>text/xhtml+xml</string>
-  <key>created_time</key><integer>1505719297</integer>
+  <key>created_time</key><integer>1506512944</integer>
   <key>info_sort_dir</key><integer>1</integer>
-  <key>order</key><integer>3</integer>
+  <key>order</key><integer>4</integer>
   <key>info_sort</key><string>order</string>
 </dict>
 </node>
