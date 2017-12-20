@@ -2,7 +2,7 @@
 <node>
 <version>6</version>
 <dict>
-  <key>expanded</key><true/>
+  <key>expanded</key><false/>
   <key>title</key><string>microservices</string>
   <key>nodeid</key><string>9b6aa3df-cf48-4721-af3b-3f782019b860</string>
   <key>modified_time</key><integer>1505719284</integer>
